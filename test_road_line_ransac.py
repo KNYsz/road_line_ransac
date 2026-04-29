@@ -7,8 +7,8 @@ import os
 import numpy as np
 import pytest
 
-# Make sure the package root is importable when running from the repo root
-sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
+# Make sure the package root is importable when running from any directory
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from ransac import fit_line_to_inliers, point_line_distances, ransac_line, detect_lines
 from edge_detection import apply_roi_mask, detect_edges
