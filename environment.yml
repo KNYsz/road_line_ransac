@@ -1,0 +1,9 @@
+name: road_ransac
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - opencv-python-headless>=4.5
+    - numpy>=1.21
